@@ -1,0 +1,26 @@
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+<form action="/prod" method="POST">
+<div class="container">
+  <h2>Product</h2>
+    <div class="form-group">
+      <label for="Input1">Val1:</label>
+      <input type="number" step="0.01" class="form-control" id="input1" placeholder="value1" name="prod" value="{{ val1 }}">
+    </div>
+    <div class="form-group">
+        <label for="Result">Result:</label>
+        <input type="number" step="0.01" class="form-control" name="result_dc" value="{{ result }}">
+      </div>
+    <button type="submit" class="btn btn-default">Submit</button>  
+</div>
+<div class="alert alert-success" role="alert">
+    <a href="/" class="alert-link">index</a>
+  </div>
+</form>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+{% endblock %}

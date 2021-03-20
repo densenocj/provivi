@@ -1,0 +1,23 @@
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+<h1>Provivi coding challenge</h1>
+<p>(test single operation)</p>
+<div class="alert alert-success" role="alert">
+  <a href="/sum" class="alert-link">Addition</a>
+</div>
+<div class="alert alert-info" role="alert">
+  <a href="/prod" class="alert-link">Product</a>
+</div>
+<div class="alert alert-warning" role="alert">
+  <a href="/power" class="alert-link">Power</a>
+</div>
+<div class="alert alert-danger" role="alert">
+  <a href="/all" class="alert-link">Final Result</a>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+{% endblock %}
