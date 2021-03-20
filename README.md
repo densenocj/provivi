@@ -13,11 +13,11 @@ py -3 -m venv venv
 
 venv\Scripts\activate
 
-pip install Flask
+(venv) pip install Flask
 
-pip install flask-wtf
+(venv) pip install flask-wtf
 
-pip install flask_bootstrap
+(venv) pip install flask_bootstrap
 
 ```
 
